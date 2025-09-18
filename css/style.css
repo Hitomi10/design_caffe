@@ -1,4 +1,9 @@
 @charset "utf-8";
+
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     background-color: #e8d9bf;
 }
@@ -75,7 +80,8 @@ section {
 
 .catchcopy p.en {
     font-size: 30px;
-    line-height: 3.86;        
+    line-height: 3.86; 
+    margin-bottom: 34px;       
 }
 
 .catchcopy h2.ja {
@@ -89,7 +95,7 @@ section {
     font-size: 23px;
     letter-spacing: 0.1rem;
     line-height: 1.65;
-    margin-bottom: 94px;
+    margin-bottom: 84px;
 }
 
 /* ===== ABOUT US ===== */
@@ -97,7 +103,7 @@ section {
     display: flex;
     flex-direction: row; /* デフォルトなので書かなくてもOK */
     align-items: flex-start;
-    gap: 50px;
+    gap: 72px;
     margin: 0 auto;
     padding: 60px 
      "游ゴシック体", YuGothic, "游ゴシック Medium",
@@ -105,12 +111,11 @@ section {
 }
 
 .about_left {
+    width: 50%;
     flex: 0 0 auto;           
 }
 
 .about_left img.about-img {
-    width: 500px;
-    height: 560px;
     border-radius: 0 0 90px 0;
     display: block;
 }
@@ -123,18 +128,17 @@ section {
 }
 
 .about_right img.heading_h2 {
-    width: 180px;              
+    width: 272px;              
     height: auto;
     display: block;
-    margin-top: 53px;
     margin-bottom:40px;
 }
 
 .about_title {
-    font-size: 32px;
+    font-size: 44px;
     font-weight: bold;
     line-height: 1.5;
-    margin: 0 0 10px 0;  
+    margin-bottom: 19px;
 }
 
 .about_text {
@@ -146,8 +150,8 @@ section {
 /* ===== MENU ===== */
 .menu_images {
     display: flex;
-    gap: 39px; 
-    margin-top: 30px;
+    gap: 50px; 
+    
 }
 
 .menu_item {
@@ -158,6 +162,7 @@ section {
 .menu_item img {
     width: 300px;
     height: 200px;
+    margin-top: 40px;
     border-radius: 0 42px 0 0;
     object-fit: cover; /* 枠いっぱいに画像を表示 */
     display: block;
@@ -168,10 +173,11 @@ section {
     bottom: 15px;
     left: 10px;
     font-size: 38px;
-    margin: 0 0 10px 0;
+    margin-bottom: 15px;
     color: #d30202; /* タイトル赤字 */
-    font-family: "游ゴシック体", YuGothic, "游ゴシック Medium",
-      "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
+    font-family: "YuMincho", "Yu Mincho", "Hiragino Mincho ProN", "Hiragino Mincho Pro",
+             "MS PMincho", "MS Mincho", serif;
+
 }
 
 .menu_desc {
@@ -181,7 +187,7 @@ section {
 }
 
 #menu {
-    padding-top: 84px; /* 上の写真との間隔 */
+    padding-top: 90px; /* 上の写真との間隔 */
 }
 
 /* ===== GALLERY ===== */
@@ -206,11 +212,10 @@ section {
 
 .gallery_item img {
   width: 100%;
-  height: 300px;
   object-fit: cover;
   display: block;
-  margin-top: 12px;
-  margin-bottom: 53px;
+  margin-top: 15px;
+  margin-bottom: 58px;
 }
 
 .arrow {
@@ -227,17 +232,17 @@ section {
 
 /* ===== EVENT ===== */
 .news_list_wrapper {
-    width: 1000px;
+    max-width: 1000px;
+    width: 100%;
     height: 200px;              
     background-color: #fff;     
     border: 3px solid #4f260b;  
     margin: 0 auto; 
-    margin-top: 56px;   
-    margin-bottom: 73px;         
+    margin-top: 29px;   
+    margin-bottom: 70px;         
     display: flex;
     flex-direction: column;     
-    justify-content: center;    
-    padding: 35px 20px;            
+    justify-content: center;                
     box-sizing: border-box;
 }
 
@@ -245,6 +250,8 @@ section {
     padding: 0;
     margin: 0;
     list-style: none;
+    font-size: 23px;
+    
 }
 
 .news_list_wrapper ul li {
@@ -252,7 +259,7 @@ section {
     justify-content: flex-start; 
     align-items: center;         
     margin-bottom: 20px;
-    width: 500px;                
+    max-width: 670px;              
     margin-left: auto;           
     margin-right: auto;
 }
@@ -268,7 +275,7 @@ section {
     display: inline-block;      
     text-align: left;           
     border-bottom: 1px solid #4f260b; 
-    padding-bottom: 2px;
+    
 }
 
 /* ===== ACCESS ===== */
@@ -284,18 +291,25 @@ section {
     display: block;
 }
 
+.ACCESS_section .map .heading_h2 {
+    margin-bottom: 36px; 
+}
+
+
 /* ===== FOOTER ===== */
 footer {
     background-color: #fff;
 }
 
 .footer {
-    display: flex;
-    justify-content: center;    
-    align-items: flex-start;    
-    padding: 85px 40px;         
+    display: flex;   
+    align-items: flex-start;           
     gap: 65px;                  
-    flex-wrap: wrap;            
+    flex-wrap: wrap;  
+    max-width: 1000px;  
+    margin: 0 auto; 
+    margin-top: 80px;    
+    margin-bottom: 80px;   
 }
 
 .footer_logo img {
@@ -319,7 +333,7 @@ footer {
 
 .copy {
     text-align: center;
-    padding-bottom: 78px;
+    padding-bottom: 80px;
     font-size: 16px;
 }
 
