@@ -47,9 +47,11 @@ body{
 /* ===== CONTAINER ===== */
 .container {
     max-width: 1020px;            
-    margin: 0 auto;       
-    padding: 0 10px;      
+    margin: 0 auto;            
     box-sizing: border-box; 
+    padding-inline: 10px;
+    align-items: center;
+    
 }
 
 /* ===== SECTION 共通 ===== */
@@ -58,6 +60,7 @@ section {
     justify-content: center; /* 横方向中央 */
     flex-direction: column;  /* 縦積み */
     align-items: center;     /* 内部要素も中央揃え */
+    padding: 10px;
 }
 
 .section_flex {
@@ -105,9 +108,7 @@ section {
     align-items: flex-start;
     gap: 72px;
     margin: 0 auto;
-    padding: 60px 
-     "游ゴシック体", YuGothic, "游ゴシック Medium",
-      "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
+    padding-inline: 10px;
 }
 
 .about_left {
@@ -156,12 +157,9 @@ section {
 
 .menu_item {
     position: relative;  /* 赤文字を重ねるため */
-    flex: 0 0 329px;      /* 幅固定 */
 }
 
 .menu_item img {
-    width: 300px;
-    height: 200px;
     margin-top: 40px;
     border-radius: 0 42px 0 0;
     object-fit: cover; /* 枠いっぱいに画像を表示 */
@@ -258,11 +256,16 @@ section {
     display: flex;
     justify-content: flex-start; 
     align-items: center;         
-    margin-bottom: 20px;
     max-width: 670px;              
     margin-left: auto;           
     margin-right: auto;
 }
+
+.news_list_wrapper ul li:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+
 
 .date {
     width: 120px;               
@@ -296,6 +299,8 @@ section {
 }
 
 
+
+
 /* ===== FOOTER ===== */
 footer {
     background-color: #fff;
@@ -308,8 +313,9 @@ footer {
     flex-wrap: wrap;  
     max-width: 1000px;  
     margin: 0 auto; 
-    margin-top: 80px;    
-    margin-bottom: 80px;   
+    padding-top: 80px;    
+    margin-bottom: 80px; 
+    padding-inline: 10px;  
 }
 
 .footer_logo img {
