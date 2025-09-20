@@ -49,7 +49,6 @@ body{
     max-width: 1020px;            
     margin: 0 auto;            
     box-sizing: border-box; 
-    padding-inline: 10px;
     align-items: center;
     
 }
@@ -228,6 +227,12 @@ section {
 .arrow.left { left: 0; }
 .arrow.right { right: 0; }
 
+#GALLERY {
+    padding-inline: 0; /* 横だけ0に */
+}
+
+
+
 /* ===== EVENT ===== */
 .news_list_wrapper {
     max-width: 1000px;
@@ -298,6 +303,18 @@ section {
     margin-bottom: 36px; 
 }
 
+.ACCESS_section { 
+    padding-bottom: 0;    
+    margin-bottom: 0;    
+}
+
+.ACCESS_section{
+    padding-inline: 0; 
+}
+
+
+
+
 
 
 
@@ -314,8 +331,7 @@ footer {
     max-width: 1000px;  
     margin: 0 auto; 
     padding-top: 80px;    
-    margin-bottom: 80px; 
-    padding-inline: 10px;  
+    margin-bottom: 80px;   
 }
 
 .footer_logo img {
