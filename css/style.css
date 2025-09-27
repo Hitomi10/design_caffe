@@ -310,6 +310,7 @@ section {
   #about_us_sp .heading_h2 {
     margin-bottom: 15px;
 }
+}
 
 /* ===== MENU ===== */
 #menu {
@@ -744,6 +745,7 @@ footer {
  }
 
 
+
 /* ===== PAGE TOP ===== */
 .pagetop {
     position: fixed;
@@ -763,6 +765,6 @@ footer {
         right: 10px;
     }
 }
-}
+
 
 
