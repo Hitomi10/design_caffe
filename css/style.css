@@ -123,6 +123,10 @@ body{
         font-family: "游ゴシック体", YuGothic, "游ゴシック Medium",
       "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
     }
+
+    .heading_h2 {
+        height: 45px;
+}
 }
 
 
@@ -202,16 +206,19 @@ section {
         letter-spacing: 0.1rem;
         font-size: 16px;
     }
+    .catchcopy {
+        padding-top: 45px;
+    }
 }
 /* ===== ABOUT US（PC）===== */
 .about_section.about_pc {
   display: flex;
   flex-direction: row;
-  align-items: flex-start;
+  align-items: center;
   gap: 72px;
   margin: 0 auto;
   padding-inline: 10px;
-  max-width: 1200px;
+  max-width: 1000px;
   box-sizing: border-box;
 }
 
@@ -258,7 +265,9 @@ section {
 
 /* ===== ABOUT US（SP）===== */
 @media screen and (max-width: 768px) {
-  .about_pc { display: none; }
+  .about_section.about_pc { 
+    display: none; 
+}
   
   .about_sp {
     display: flex;
@@ -274,7 +283,7 @@ section {
   .about_sp .about_left img.about-img {
     display: block;
     width: 100%;
-    margin: 0 0 20px 0;
+    margin: 0;
     border-radius: 0;
   }
 
@@ -287,17 +296,26 @@ section {
 
   .about_title {
     font-size: 36px;
-    margin: 35px 0 15px;
+    margin: 35px 0 30px;
+    text-align: left;
   }
 
   .about_text {
     font-size: 16px;
     line-height: 1.8;
     margin: 0 0 55px;
+    text-align: left;
   }
+
+  #about_us_sp .heading_h2 {
+    margin-bottom: 15px;
 }
 
 /* ===== MENU ===== */
+#menu {
+   max-width: 1000px;
+   margin: 0 auto;
+}
 .menu_images {
     display: flex;
     gap: 50px; 
@@ -344,7 +362,6 @@ section {
         box-sizing: border-box;
     }
      #menu .heading_h2 {
-        margin-top: 55px;
         margin-bottom: 20px; /* メニュー内のロゴ下だけ */
     }
 
@@ -381,7 +398,7 @@ section {
         box-sizing: border-box;
     }
     .menu_images .menu_item .menu_title {
-        margin-bottom: 30px; 
+        margin-bottom: 15px; 
     }
 
     /* 説明文の余白・パディングリセット */
@@ -419,8 +436,6 @@ section {
   width: 100%;
   object-fit: cover;
   display: block;
-  margin-top: 15px;
-  margin-bottom: 58px;
 }
 
 .arrow {
@@ -453,7 +468,7 @@ section {
         width: 100%;
         box-sizing: border-box;
         margin-top: 90px;
-        margin-bottom: 20px;
+        margin-bottom: 19px;
     }
 }
 
@@ -514,12 +529,12 @@ section {
 @media screen and (max-width: 768px) {
 #EVENT {
     margin: 0;             
-    padding: 0 10px;    
+    padding: 0 20px;    
     box-sizing: border-box;
 }
 
 #EVENT .heading_h2 {
-    margin: 0 0 15px 0;
+    margin: 0 ;
     padding: 0;
     width: 100%;
     box-sizing: border-box;
@@ -527,13 +542,12 @@ section {
 
 /* ===== イベント箱 ===== */
 .news_list_wrapper {
-    width: 100%;
-    max-width: 335px;       
+    width: 100%;      
     height: auto;           /* 高さ自動に */
     padding: 10px;
     background-color: #fff;
     border: 3px solid #4f260b;
-    margin: 29px auto 70px auto;
+    margin: 18px auto 30px auto;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -644,8 +658,7 @@ section {
     }
 
     #ACCESS .heading_h2 {
-        margin-top: 32px;
-        margin-bottom: 10px;
+        margin-bottom: 9px;
     }
 }
 
@@ -699,13 +712,13 @@ footer {
         padding: 0;
         width: 100%;
         box-sizing: border-box;
-        gap: 35px; 
+        gap: 32px; 
     }
 
     .footer_logo img {
         width: 100%;             
         margin: 0;
-        padding-top: 48px;
+        padding-top: 47px;
     }
 
       .footer_address ul {
@@ -725,8 +738,8 @@ footer {
 
 
     .copy {
-        padding-top: 50px;
-        padding-bottom: 32px; 
+        padding-top: 40px;
+        padding-bottom: 30px; 
     }
  }
 
@@ -740,6 +753,16 @@ footer {
     height: 125px; 
     cursor: pointer;
     z-index: 1000;
+}
+
+@media screen and (max-width: 768px) {
+    .pagetop {
+        width: 100px;
+        height: 100px;
+        bottom: 10px;
+        right: 10px;
+    }
+}
 }
 
 
