@@ -445,6 +445,7 @@ section {
 .gallery_wrapper {
   position: relative;
   width: 100%;
+  height: auto;
 }
 
 .gallery_container {
@@ -474,6 +475,8 @@ section {
     transform: translateY(-50%);
     color: white;
     font-size: 30px;
+    font-weight: 700;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
     z-index: 10;
     cursor: pointer; /* ← 追加：カーソル出す */
 }
